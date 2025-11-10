@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet"><style>
+    body {
+      font-family: 'Bangers', cursive;
+      background-image: url('img/background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      .bordo-oscuro {
+    background-color: #4B0014; /* Bordó oscuro */
+    }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- barra de navegación con fondo oscuro -->
+  <nav class="bordo-oscuro mb-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-4 mb-0">
+            <li><a href="01-index.html" class="fw-semibold text-warning">Inicio</a></li>
+            <li><a href="02-biografia.html" class="fw-semibold text-warning">Biografía</a></li>
+            <li><a href="04-personajes.html" class="fw-semibold text-warning">Personajes</a></li>
+            <li><a href="05-impactoc.html" class="fw-semibold text-warning">Impacto cultural</a></li>
+            <li><a href="07-galeria.html" class="fw-semibold text-warning">Galería</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- contenido principal con container reducido -->
+  <div class="container-sm bordo-oscuro text-warning rounded-4 px-4 py-5 mb-5">
+
+    <section class="mb-4">
+      <h2 class="fw-bold text-center mb-4">FORMULARIO DE CONTACTO</h2>
+      <p>Si encontraste algún error, problema técnico o querés dejar una sugerencia sobre el sitio, completá el siguiente formulario. Tu mensaje será recibido y revisado por el autor del trabajo.</p>
+    </section>
+
+    <!-- formulario visual y completo -->
+    <form>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre completo</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="correo" name="correo" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="tipo" class="form-label">Tipo de problema</label>
+        <select class="form-select" id="tipo" name="tipo" required>
+          <option value="" disabled selected>Seleccioná una opción</option>
+          <option value="error-enlace">Error de enlace</option>
+          <option value="problema-visual">Problema visual o de diseño</option>
+          <option value="contenido">Error en el contenido</option>
+          <option value="sugerencia">Sugerencia general</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn btn-outline-light">Enviar mensaje</button>
+      </div>
+    </form>
+
+  </div>
+
+  <!-- pie de página con texto final -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col text-center">
+          <p class="mb-0">© 2025 Proyecto IG2025 - Informática General</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+  //Activar validación visual de Bootstrap al enviar el formulario
+  (() => {
+    'use strict';
+    const form = document.querySelector('form');
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    });
+  })();
+</script>
+</body>
+</html>
+
+
+</body>
+</html>

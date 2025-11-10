@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pagina Principal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet"><style>
+    body {
+      font-family: 'Bangers', cursive;
+      background-image: url('img/background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      .bordo-oscuro {
+    background-color: #4B0014; /* Bordó oscuro */
+    }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- barra de navegación con fondo oscuro -->
+  <nav class="bordo-oscuro py-3 mb-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-4 mb-0">
+            <li><a href="02-biografia.html" class="fw-semibold text-warning">Biografía</a></li>
+            <li><a href="04-personajes.html" class=" fw-semibold text-warning">Personajes</a></li>
+            <li><a href="05-impactoc.html" class="fw-semibold text-warning">Impacto cultural</a></li>
+            <li><a href="07-galeria.html" class="fw-semibold text-warning">Galería</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- contenido principal dentro de un contenedor negro -->
+  <div class="container bordo-oscuro text-warning rounded-4 px-4 py-5 mb-5">
+
+    <!-- sección de bienvenida con imagen al costado -->
+    <section class="mb-5">
+      <div class="row align-items-center g-4">
+        <div class="col-md-7">
+          <h2 class="fw-bold fs-2">STAN LEE EL HOMBRE QUE SOÑO DE MAS</h2>
+          <p class="fs-4">Bienvenidos, este sitio es un homenaje visual y narrativo a una de las figuras más influyentes del siglo XX: <strong>Stan Lee</strong>. Aquí no solo vas a encontrar datos biográficos, sino también un recorrido por su legado, sus personajes más icónicos y el impacto cultural que dejó en generaciones enteras.</p>
+          <p class="fs-4">
+  Te invitamos a sumergirte en un universo donde la imaginación no tiene límites, los héroes tienen defectos y los lectores se convierten en parte de la historia. Cada sección fue pensada para que explores, descubras y te sorprendas.</p>
+        </div>
+        <div class="col-md-5 text-center">
+          <img src="img/stanlee-portada.jpg" alt="Stan Lee saludando en una convención" class="img-fluid rounded w-75">
+        </div>
+      </div>
+    </section>
+
+    <!-- sección de exploración con imagen al costado -->
+    <section class="mb-5">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <img src="img/stanlee-oficina.jpg" alt="Stan Lee en su escritorio durante los años 90" class="img-fluid rounded w-75">
+        </div>
+        <div class="col-md-6">
+          <h2 class="fw-bold">EXPLORA LAS SECCIONES</h2>
+          <p class="fs-4">Este sitio recorre su legado desde distintas dimensiones: su biografía artística, los personajes que creó, el impacto cultural que generó y su filosofía narrativa. También incluye una galería con la portada de los comics mas importantes de la era.</p>
+          <p class="fs-4">Explorá las secciones para descubrir cómo Stan Lee transformó el cómic en un espejo de la sociedad, conocé los momentos clave de la vida de Stan Lee, desde sus inicios en Marvel hasta su influencia global.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- imagen de galería centrada -->
+    <section class="mb-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <img src="img/marvel-clasico.jpg" alt="Portadas de cómics clásicos de Marvel" class="img-fluid rounded w-75">
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- pie de página con botones y texto final -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <div class="row justify-content-center mb-3">
+        <div class="col-auto">
+          <button type="button" class="btn btn-link" onclick="location.href='08-datos.html'">Ver Datos TP</button>
+        </div>
+        <div class="col-auto">
+          <button type="button" class="btn btn-link" onclick="location.href='09-contacto.html'">Ir a Contacto</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+          <p class="mb-0">© 2025 Proyecto IG2025 - Informática General</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
+

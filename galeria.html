@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Galería de portadas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Bangers', cursive;
+      background-image: url('img/background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+    .bordo-oscuro {
+      background-color: #4B0014;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- barra de navegación con fondo oscuro -->
+  <nav class="bordo-oscuro py-3 mb-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-4 mb-0">
+            <li><a href="01-index.html" class="fw-semibold text-warning">Inicio</a></li>
+            <li><a href="02-biografia.html" class="fw-semibold text-warning">Biografía</a></li>
+            <li><a href="04-personajes.html" class="fw-semibold text-warning">Personajes</a></li>
+            <li><a href="05-impactoc.html" class="fw-semibold text-warning">Impacto cultural</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- contenido principal dentro de un contenedor negro -->
+  <div class="container bordo-oscuro text-warning rounded-4 px-4 py-5 mb-5">
+
+    <!-- introducción -->
+    <section class="mb-5">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-10 text-center">
+          <h2 class="fw-bold">PORTADAS CLÁSICAS ICÓNICAS</h2>
+          <p class="fs-4">Esta galería reúne algunas de las portadas más emblemáticas de los cómics creados por Stan Lee. Cada una representa un momento clave en la historia de Marvel y refleja el estilo visual de sus colaboradores.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- grilla de portadas -->
+    <section class="mb-5">
+      <div class="row g-4 justify-content-center">
+
+        <!-- Spider-Man -->
+        <div class="col-sm-6 col-md-4 text-center">
+          <img src="img/spiderman-portada.jpg" alt="Portada clásica de Amazing Fantasy #15" class="img-fluid rounded galeria-item" data-bs-toggle="modal" data-bs-target="#galeriaModal" data-index="0">
+          <p class="mt-2">Amazing Fantasy #15 – Primera aparición de Spider-Man (1962)</p>
+          <p class="mt-1">Esta portada presenta al primer superhéroe adolescente que no era ayudante. Stan Lee creó a Peter Parker como un joven con problemas reales, marcando un antes y un después en la empatía entre héroes y lectores.</p>
+        </div>
+
+        <!-- Los 4 Fantásticos -->
+        <div class="col-sm-6 col-md-4 text-center">
+          <img src="img/fantastic4-portada.jpg" alt="Portada de Fantastic Four #1" class="img-fluid rounded galeria-item" data-bs-toggle="modal" data-bs-target="#galeriaModal" data-index="1">
+          <p class="mt-2">Fantastic Four #1 – El inicio del universo Marvel moderno (1961)</p>
+          <p class="mt-1">Con esta historia arranca la “Era Marvel”. Stan Lee presenta a una familia de superhéroes que discute, se equivoca y se reconcilia, humanizando el género y redefiniendo la dinámica de equipo.</p>
+        </div>
+
+        <!-- Iron Man -->
+        <div class="col-sm-6 col-md-4 text-center">
+          <img src="img/ironman-portada.jpg" alt="Portada de Tales of Suspense #39" class="img-fluid rounded galeria-item" data-bs-toggle="modal" data-bs-target="#galeriaModal" data-index="2">
+          <p class="mt-2">Tales of Suspense #39 – Primera aparición de Iron Man (1963)</p>
+          <p class="mt-1">Con esta portada, Stan Lee introduce a un héroe tecnológico que nace de la culpa. Tony Stark, herido por sus propias armas, representa la redención y la crítica al poder militar en plena Guerra Fría.</p>
+        </div>
+
+        <!-- X-Men -->
+        <div class="col-sm-6 col-md-4 text-center">
+          <img src="img/xmen-portada.jpg" alt="Portada de X-Men #1" class="img-fluid rounded galeria-item" data-bs-toggle="modal" data-bs-target="#galeriaModal" data-index="3">
+          <p class="mt-2">X-Men #1 – El equipo mutante original (1963)</p>
+          <p class="mt-1">Este número inaugura una saga que usó la mutación como metáfora de la discriminación. Stan Lee propone un grupo marginado que lucha por aceptación, anticipando debates sociales que siguen vigentes.</p>
+        </div>
+
+        <!-- Black Panther -->
+        <div class="col-sm-6 col-md-4 text-center">
+          <img src="img/blackpanther-portada.jpg" alt="Portada de Fantastic Four #52" class="img-fluid rounded galeria-item" data-bs-toggle="modal" data-bs-target="#galeriaModal" data-index="4">
+          <p class="mt-2">Fantastic Four #52 – Primera aparición de Black Panther (1966)</p>
+          <p class="mt-1">Este número es muy importante ya que es la primera aparición del primer superhéroe negro, símbolo de poder, soberanía y representación en Marvel.</p>
+        </div>
+
+        <!-- The Avengers -->
+        <div class="col-sm-6 col-md-4 text-center">
+          <img src="img/avengers-portada.jpg" alt="Portada de The Avengers #1" class="img-fluid rounded galeria-item" data-bs-toggle="modal" data-bs-target="#galeriaModal" data-index="5">
+          <p class="mt-2">The Avengers #1 – Unión de héroes: Iron Man, Thor, Hulk, Ant-Man y Wasp (1963)</p>
+          <p class="mt-1">Esta portada marca el nacimiento del equipo de superhéroes más famoso del universo Marvel. Stan Lee reunió a varios personajes ya creados y sumó a Ant-Man y Wasp, ampliando el concepto de colaboración heroica y narrativa compartida.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- pie de página con botones y texto final -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <div class="row justify-content-center mb-3">
+        <div class="col-auto">
+          <button type="button" class="btn btn-link" onclick="location.href='08-datos.html'">Ver Datos TP</button>
+        </div>
+        <div class="col-auto">
+          <button type="button" class="btn btn-link" onclick="location.href='09-contacto.html'">Ir a Contacto</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+          <p class="mb-0">© 2025 Proyecto IG2025 - Informática General</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal fullscreen con fondo oscuro translúcido -->
+  <div class="modal fade" id="galeriaModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content bg-dark bg-opacity-75 border-0 position-relative">
+
+        <!-- Botón de cierre -->
+        <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+
+        <div class="modal-body p-0 d-flex justify-content-center align-items-center">
+          <div id="galeriaCarousel" class="carousel slide w-100" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Las imágenes se insertan dinámicamente -->
+            </div>
+
+              <!-- Flechas de navegación -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#galeriaCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bg-dark rounded-circle p-2"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#galeriaCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon bg-dark rounded-circle p-2"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script para insertar imágenes dinámicamente -->
+  <script>
+    const imagenes = [
+      'img/spiderman-portada.jpg',
+      'img/fantastic4-portada.jpg',
+      'img/ironman-portada.jpg',
+      'img/xmen-portada.jpg',
+      'img/blackpanther-portada.jpg',
+      'img/avengers-portada.jpg'
+    ];
+
+    const carouselInner = document.querySelector('#galeriaCarousel .carousel-inner');
+    const galeriaItems = document.querySelectorAll('.galeria-item');
+
+    galeriaItems.forEach((item) => {
+      item.addEventListener('click', () => {
+        const index = parseInt(item.getAttribute('data-index'));
+        carouselInner.innerHTML = '';
+
+        imagenes.forEach((src, i) => {
+          const activeClass = i === index ? 'active' : '';
+          const div = document.createElement('div');
+          div.className = `carousel-item ${activeClass}`;
+          div.innerHTML = `<img src="${src}" class="d-block mx-auto img-fluid">`;
+          carouselInner.appendChild(div);
+        });
+      });
+    });
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+
