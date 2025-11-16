@@ -1,3 +1,4 @@
+/* imagen de fondo */
 .fondo {
       font-family: 'Bangers', cursive;
       background-image: url('../img/background.jpg');
@@ -7,10 +8,29 @@
       background-repeat: no-repeat;
       }
 
+
+/* color de container, nav y footer */     
 .bordo-oscuro {
-    background-color: #4B0014; /* Bordó oscuro */
+    background-color: #4B0014; 
     }
 
+/* color de las 3 rayas del nav del celular*/
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255,193,7)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* tamaño de imganes en galeria */
+
+/* celular */
+.img-galeria {
+  width: 75% !important;
+  height: 75% !important;
+}
+
+/* pc */
+@media (min-width: 768px) {
+  .img-galeria {
+    width: 25% !important;
+    height: 25% !important;
+  }
 }
