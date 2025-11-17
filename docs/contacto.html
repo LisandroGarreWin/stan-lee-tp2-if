@@ -16,7 +16,7 @@
 <div class="d-md-none">
   <div class="collapse bordo-oscuro" id="navbarToggleExternalContent">
     <div class="p-4">
-      <h5 class="h4 text-warning mb-3">Menú</h5>
+      <h5 class="h4 text-warning mb-3 lh-lg">Menú</h5>
       <ul class="list-unstyled mb-3">
         <li><a href="index.html" class="fw-semibold text-warning">Inicio</a></li>
         <li><a href="biografia.html" class="fw-semibold text-warning">Biografía</a></li>
@@ -124,29 +124,9 @@
     </div>
   </footer>
 
-<!-- Bootstrap JS -->
+<!-- Bootstrap JS y JS propio -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-
-<script>
-
-
-// script de bootstrap validacion de formulario 
-
-  (() => {
-    'use strict';
-    const forms = document.querySelectorAll('.needs-validation');
-    Array.from(forms).forEach(form => {
-      form.addEventListener('submit', event => {
-        if (!form.checkValidity()) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  })();
-</script>
+<script src="js/formulario.js"></script>
 
 </body>
 </html>

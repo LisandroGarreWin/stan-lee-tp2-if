@@ -15,7 +15,7 @@
 <div class="d-md-none">
   <div class="collapse bordo-oscuro" id="navbarToggleExternalContent">
     <div class="p-4">
-      <h5 class="h4 text-warning mb-3">Menú</h5>
+      <h5 class="h4 text-warning mb-3 lh-lg">Menú</h5>
       <ul class="list-unstyled mb-3">
         <li><a href="index.html" class="fw-semibold text-warning">Inicio</a></li>
         <li><a href="biografia.html" class="fw-semibold text-warning">Biografía</a></li>
@@ -172,38 +172,11 @@
     </div>
   </div>
 
-  <!-- script para insertar imágenes dinámicamente -->
-  <script>
-    const imagenes = [
-      'img/spiderman-portada.jpg',
-      'img/fantastic4-portada.jpg',
-      'img/ironman-portada.jpg',
-      'img/xmen-portada.jpg',
-      'img/blackpanther-portada.jpg',
-      'img/avengers-portada.jpg'
-    ];
 
-    const carouselInner = document.querySelector('#galeriaCarousel .carousel-inner');
-    const galeriaItems = document.querySelectorAll('.galeria-item');
 
-    galeriaItems.forEach((item) => {
-      item.addEventListener('click', () => {
-        const index = parseInt(item.getAttribute('data-index'));
-        carouselInner.innerHTML = '';
-
-        imagenes.forEach((src, i) => {
-          const activeClass = i === index ? 'active' : '';
-          const div = document.createElement('div');
-          div.className = `carousel-item ${activeClass}`;
-          div.innerHTML = `<img src="${src}" class="d-block mx-auto img-fluid img-galeria object-fit-contain">`;
-          carouselInner.appendChild(div);
-        });
-      });
-    });
-  </script>
-
-<!-- Bootstrap JS -->
+<!-- Bootstrap JS y JS propio -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/galeria.js"></script>
 
 </body>
 </html>

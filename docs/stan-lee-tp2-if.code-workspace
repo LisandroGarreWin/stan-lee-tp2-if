@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "stan-lee-tp2-if",
+			"path": ".."
+		},
+		{
+			"name": "img",
+			"path": "../../img"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "stan-lee-tp2-if"
+	}
+}
